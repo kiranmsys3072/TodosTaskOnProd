@@ -1,0 +1,66 @@
+1.insert mockup data route endpoint
+
+http://localhost:3000/api/insert
+
+request body: [
+  {
+    "id": 3,
+    "createdAt": "January 13, 2021 11:13:00",
+    "title": "Personal Notes",
+    "context":
+      "Some random personal note. This is not so important but still needed.",
+    "starred": false,
+    "deleted": false
+  },
+   {
+    "id": 4,
+    "createdAt": "January 13, 2021 11:13:00",
+    "title": "Personal Notes",
+    "context":
+      "Some random personal note. This is not so important but still needed.",
+    "starred": false,
+    "deleted": false
+  }
+  
+]
+
+
+2.Api for fetching all todos
+
+http://localhost:3000/api/todos
+
+
+3.Api to get starred todos
+
+http://localhost:3000/api/starred
+
+4.Api for get deleted todos
+
+http://localhost:3000/api/deleted
+
+
+5.Api for searching todo items with keyWords
+http://localhost:3000/api/queryTodos?title=f
+
+6.Api for create New Todo
+
+http://localhost:3000/api/todo
+
+{
+    "title":"Nodejs task",
+    "context":"I need to submit before afternoon",
+    "starred":true,
+    "deleted":false,
+    "createdAt":'11-11-2022'
+}
+
+7.Api for update Todo
+http://localhost:3000/api/update/"todo document id"
+
+8.Api for search perticular todo by id
+
+http://localhost:3000/api/todo/"todo document id"
+
+
+9.delted todo by id --soft Delete just updating value for deleted key
+http://localhost:3000/api/deleteSingle/"todo document id"
